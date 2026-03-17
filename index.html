@@ -98,12 +98,31 @@
       font-size: 30px;
     }
 
+    h3 {
+      font-size: 20px;
+      margin-top: 0;
+      margin-bottom: 14px;
+      color: #f8fafc;
+    }
+
     .card {
       background: #1e293b;
       border-radius: 16px;
       padding: 24px;
       margin-bottom: 22px;
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+    }
+
+    .subcard {
+      background: #0f172a;
+      border: 1px solid rgba(148, 163, 184, 0.15);
+      border-radius: 14px;
+      padding: 18px;
+      margin-bottom: 18px;
+    }
+
+    .subcard:last-child {
+      margin-bottom: 0;
     }
 
     p {
@@ -222,6 +241,10 @@
       .card {
         padding: 18px;
       }
+
+      .subcard {
+        padding: 14px;
+      }
     }
   </style>
 </head>
@@ -251,52 +274,78 @@
     <h2 id="profile-title">Perfil</h2>
     <div class="card">
       <p id="profile-text">
-        Profesional con experiencia en análisis de datos, operaciones de call center y soporte técnico.
-        Enfocado en detección de anomalías, monitoreo de KPIs y optimización de procesos. Interesado en
+        Profesional con experiencia en operaciones de call center, soporte técnico y automatización de reportes.
+        Enfocado en monitoreo de KPIs, soporte a plataformas operativas y optimización de procesos. Interesado en
         fintech, prevención de fraude y análisis de riesgo.
       </p>
     </div>
 
     <h2 id="skills-title">Habilidades</h2>
     <div class="card">
-      <div class="tags">
-        <span class="tag" data-es="Python" data-en="Python">
-          <img class="tag-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
-          <span class="tag-text">Python</span>
-        </span>
+      <div class="subcard">
+        <h3 id="programming-title">Lenguajes de programación</h3>
+        <div class="tags">
+          <span class="tag" data-es="Python" data-en="Python">
+            <img class="tag-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+            <span class="tag-text">Python</span>
+          </span>
 
-        <span class="tag" data-es="JavaScript" data-en="JavaScript">
-          <img class="tag-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
-          <span class="tag-text">JavaScript</span>
-        </span>
+          <span class="tag" data-es="JavaScript" data-en="JavaScript">
+            <img class="tag-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+            <span class="tag-text">JavaScript</span>
+          </span>
 
-        <span class="tag" data-es="HTML" data-en="HTML">
-          <img class="tag-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />
-          <span class="tag-text">HTML</span>
-        </span>
+          <span class="tag" data-es="HTML" data-en="HTML">
+            <img class="tag-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />
+            <span class="tag-text">HTML</span>
+          </span>
 
-        <span class="tag" data-es="CSS" data-en="CSS">
-          <img class="tag-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" />
-          <span class="tag-text">CSS</span>
-        </span>
+          <span class="tag" data-es="CSS" data-en="CSS">
+            <img class="tag-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" />
+            <span class="tag-text">CSS</span>
+          </span>
 
-        <span class="tag" data-es="Java" data-en="Java">
-          <img class="tag-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
-          <span class="tag-text">Java</span>
-        </span>
+          <span class="tag" data-es="Java" data-en="Java">
+            <img class="tag-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+            <span class="tag-text">Java</span>
+          </span>
 
-        <span class="tag" data-es="SQL" data-en="SQL">
-          <img class="tag-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" />
-          <span class="tag-text">SQL</span>
-        </span>
+          <span class="tag" data-es="SQL" data-en="SQL">
+            <img class="tag-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" />
+            <span class="tag-text">SQL</span>
+          </span>
+        </div>
+      </div>
 
-        <span class="tag" data-es="Excel Avanzado" data-en="Advanced Excel">Excel Avanzado</span>
-        <span class="tag" data-es="Análisis de Datos" data-en="Data Analysis">Análisis de Datos</span>
-        <span class="tag" data-es="Monitoreo de KPIs" data-en="KPI Monitoring">Monitoreo de KPIs</span>
-        <span class="tag" data-es="Optimización de Procesos" data-en="Process Optimization">Optimización de Procesos</span>
-        <span class="tag" data-es="Soporte IT" data-en="IT Support">Soporte IT</span>
-        <span class="tag" data-es="Redes" data-en="Networks">Redes</span>
-        <span class="tag" data-es="Automatización" data-en="Automation">Automatización</span>
+      <div class="subcard">
+        <h3 id="other-skills-title">Otras habilidades</h3>
+        <div class="tags">
+          <span class="tag" data-es="Excel Intermedio" data-en="Intermediate Excel">
+            <img class="tag-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Excel" />
+            <span class="tag-text">Excel Intermedio</span>
+          </span>
+
+          <span class="tag" data-es="Automatización" data-en="Automation">Automatización</span>
+          <span class="tag" data-es="Monitoreo de KPIs" data-en="KPI Monitoring">Monitoreo de KPIs</span>
+          <span class="tag" data-es="Soporte IT" data-en="IT Support">Soporte IT</span>
+          <span class="tag" data-es="Redes" data-en="Networks">Redes</span>
+          <span class="tag" data-es="Inglés B2" data-en="English B2">Inglés B2</span>
+        </div>
+      </div>
+
+      <div class="subcard">
+        <h3 id="systems-title">Sistemas operativos</h3>
+        <div class="tags">
+          <span class="tag" data-es="Linux" data-en="Linux">
+            <img class="tag-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" />
+            <span class="tag-text">Linux</span>
+          </span>
+
+          <span class="tag" data-es="Windows" data-en="Windows">
+            <img class="tag-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" alt="Windows" />
+            <span class="tag-text">Windows</span>
+          </span>
+        </div>
       </div>
     </div>
 
@@ -306,9 +355,7 @@
         <div class="job-title">Callpeople S.A.S (2023 – 2026)</div>
         <div class="job-role" id="job1-role">Ingeniero Principal de Operaciones y Sistemas</div>
         <ul>
-          <li id="job1-li1">Análisis de datos operativos y detección de patrones para mejorar la operación.</li>
           <li id="job1-li2">Automatización de reportes y seguimiento de KPIs con herramientas tecnológicas.</li>
-          <li id="job1-li3">Optimización de procesos de operación y apoyo a la toma de decisiones.</li>
           <li id="job1-li4">Monitoreo de sistemas, redes internas y plataformas operativas.</li>
         </ul>
       </div>
@@ -371,13 +418,14 @@
         location: "Colombia",
         profileTitle: "Perfil",
         profileText:
-          "Profesional con experiencia en análisis de datos, operaciones de call center y soporte técnico. Enfocado en detección de anomalías, monitoreo de KPIs y optimización de procesos. Interesado en fintech, prevención de fraude y análisis de riesgo.",
+          "Profesional con experiencia en operaciones de call center, soporte técnico y automatización de reportes. Enfocado en monitoreo de KPIs, soporte a plataformas operativas y optimización de procesos. Interesado en fintech, prevención de fraude y análisis de riesgo.",
         skillsTitle: "Habilidades",
+        programmingTitle: "Lenguajes de programación",
+        otherSkillsTitle: "Otras habilidades",
+        systemsTitle: "Sistemas operativos",
         experienceTitle: "Experiencia",
         job1Role: "Ingeniero Principal de Operaciones y Sistemas",
-        job1Li1: "Análisis de datos operativos y detección de patrones para mejorar la operación.",
         job1Li2: "Automatización de reportes y seguimiento de KPIs con herramientas tecnológicas.",
-        job1Li3: "Optimización de procesos de operación y apoyo a la toma de decisiones.",
         job1Li4: "Monitoreo de sistemas, redes internas y plataformas operativas.",
         job2Role: "Soporte de Redes y Sistemas",
         job2Li1: "Resolución de incidencias técnicas relacionadas con redes, sistemas y conectividad.",
@@ -402,13 +450,14 @@
         location: "Colombia",
         profileTitle: "Profile",
         profileText:
-          "Professional with experience in data analysis, call center operations, and technical support. Focused on anomaly detection, KPI monitoring, and process optimization. Interested in fintech, fraud prevention, and risk analysis.",
+          "Professional with experience in call center operations, technical support, and report automation. Focused on KPI monitoring, support for operational platforms, and process optimization. Interested in fintech, fraud prevention, and risk analysis.",
         skillsTitle: "Skills",
+        programmingTitle: "Programming Languages",
+        otherSkillsTitle: "Other Skills",
+        systemsTitle: "Operating Systems",
         experienceTitle: "Experience",
         job1Role: "Lead Operations & Systems Engineer",
-        job1Li1: "Operational data analysis and pattern detection to improve performance.",
         job1Li2: "Automation of reports and KPI tracking using technology-driven tools.",
-        job1Li3: "Process optimization and support for operational decision-making.",
         job1Li4: "Monitoring of systems, internal networks, and operational platforms.",
         job2Role: "Network & Systems Support",
         job2Li1: "Resolution of technical incidents related to networks, systems, and connectivity.",
@@ -437,11 +486,12 @@
       document.getElementById("profile-title").textContent = content[lang].profileTitle;
       document.getElementById("profile-text").textContent = content[lang].profileText;
       document.getElementById("skills-title").textContent = content[lang].skillsTitle;
+      document.getElementById("programming-title").textContent = content[lang].programmingTitle;
+      document.getElementById("other-skills-title").textContent = content[lang].otherSkillsTitle;
+      document.getElementById("systems-title").textContent = content[lang].systemsTitle;
       document.getElementById("experience-title").textContent = content[lang].experienceTitle;
       document.getElementById("job1-role").textContent = content[lang].job1Role;
-      document.getElementById("job1-li1").textContent = content[lang].job1Li1;
       document.getElementById("job1-li2").textContent = content[lang].job1Li2;
-      document.getElementById("job1-li3").textContent = content[lang].job1Li3;
       document.getElementById("job1-li4").textContent = content[lang].job1Li4;
       document.getElementById("job2-role").textContent = content[lang].job2Role;
       document.getElementById("job2-li1").textContent = content[lang].job2Li1;
@@ -460,13 +510,13 @@
 
       document.querySelectorAll(".tag").forEach(tag => {
         const textSpan = tag.querySelector(".tag-text");
-
-        if (textSpan) {
-          const translated = tag.getAttribute(`data-${lang}`);
-          if (translated) textSpan.textContent = translated;
-        } else {
-          const translated = tag.getAttribute(`data-${lang}`);
-          if (translated) tag.textContent = translated;
+        const translated = tag.getAttribute(`data-${lang}`);
+        if (translated) {
+          if (textSpan) {
+            textSpan.textContent = translated;
+          } else {
+            tag.textContent = translated;
+          }
         }
       });
     }
